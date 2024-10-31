@@ -3,10 +3,6 @@
 
 #pragma once
 
-
-#define SPLIT_USB_DETECT
-#define SPLIT_USB_TIMEOUT 5000
-
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
 
@@ -25,6 +21,19 @@
 
 /* layer config */
 #define TAPPING_TOGGLE 1
+
+#define MASTER_LEFT
+
+#define USE_SERIAL
+
+#define SPLIT_USB_DETECT
+#define SPLIT_USB_TIMEOUT 5000
+
+// Enable a software watchdog on any side delegated as slave and will reboot the keyboard if no successful communication
+// This setup causes the assertion failure because the watchdog timer needs to be set to a value greater than the USB timeout
+// Ex. SPLIT USB TIMEOUT 4000, WATCHDOG TIMEOUT 5000
+#define SPLIT_WATCHDOG_ENABLE
+#define SPLIT_WATCHDOG_TIMEOUT 6000
 
 /* disable action features */
 //#define NO_ACTION_LAYER
