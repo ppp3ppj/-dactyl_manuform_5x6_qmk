@@ -1,6 +1,6 @@
 # Dactyl-CC
 
-![DactylCC](https://i.imgur.com/CUbPLZCh.jpeg)
+![DactylCC](https://github.com/ppp3ppj/keyboard-config/blob/main/things/dactyl_cc/dactyl_cc_preview.jpeg)
 
 Modelled on the *Kinesis Advantage* (KA) 1|2, though missing it's combined function and program row, the *Dactyl CC* retains the finger and thumb key placements of the KA but opts to split board into physical halves.
 
