@@ -26,14 +26,17 @@
 
 #define USE_SERIAL
 
-#define SPLIT_USB_DETECT
-#define SPLIT_USB_TIMEOUT 5000
 
 // Enable a software watchdog on any side delegated as slave and will reboot the keyboard if no successful communication
 // This setup causes the assertion failure because the watchdog timer needs to be set to a value greater than the USB timeout
 // Ex. SPLIT USB TIMEOUT 4000, WATCHDOG TIMEOUT 5000
+
+// Detect on cold boot
+#define SPLIT_USB_DETECT
+#define SPLIT_USB_TIMEOUT 2000
+#define SPLIT_USB_TIMEOUT_POLL 10
 #define SPLIT_WATCHDOG_ENABLE
-#define SPLIT_WATCHDOG_TIMEOUT 6000
+#define SPLIT_WATCHDOG_TIMEOUT 3000
 
 /* disable action features */
 //#define NO_ACTION_LAYER
