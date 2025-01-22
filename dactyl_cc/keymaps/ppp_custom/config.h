@@ -22,7 +22,8 @@
 /* layer config */
 #define TAPPING_TOGGLE 1
 
-#define MASTER_LEFT
+//#define MASTER_LEFT
+#define MASTER_RIGHT
 
 #define USE_SERIAL
 
